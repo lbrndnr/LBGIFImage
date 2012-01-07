@@ -65,7 +65,7 @@
     
     NSTimeInterval duration = [[gifProperties objectForKey:(NSString*)kCGImagePropertyGIFDelayTime] doubleValue];
     if (!duration) {
-        duration = (1.0f/3.0f)*2;
+        duration = (1.0f/10.0f)*count;
     }
     
     CFRelease(source);
