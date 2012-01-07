@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B8951AF14B7E2E90083B7ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8951AE14B7E2E90083B7ED /* UIKit.framework */; };
+		2B8951B114B7E2E90083B7ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8951B014B7E2E90083B7ED /* Foundation.framework */; };
+		2B8951B314B7E2E90083B7ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8951B214B7E2E90083B7ED /* CoreGraphics.framework */; };
+		2B8951B914B7E2E90083B7ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B8951B714B7E2E90083B7ED /* InfoPlist.strings */; };
+		2B8951BB14B7E2E90083B7ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8951BA14B7E2E90083B7ED /* main.m */; };
+		2B8951BF14B7E2E90083B7ED /* LBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8951BE14B7E2E90083B7ED /* LBAppDelegate.m */; };
+		2B8951C214B7E2E90083B7ED /* LBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8951C114B7E2E90083B7ED /* LBViewController.m */; };
+		2B8951C514B7E2E90083B7ED /* LBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B8951C314B7E2E90083B7ED /* LBViewController.xib */; };
+		2B8951CD14B7E2FA0083B7ED /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8951CC14B7E2FA0083B7ED /* UIImage+GIF.m */; };
+		2B8951CF14B7E3410083B7ED /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8951CE14B7E3410083B7ED /* ImageIO.framework */; };
+		2B8951D914B7E3B80083B7ED /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B8951D814B7E3B80083B7ED /* image.gif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B8951AA14B7E2E90083B7ED /* LBGIFImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBGIFImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B8951AE14B7E2E90083B7ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2B8951B014B7E2E90083B7ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2B8951B214B7E2E90083B7ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2B8951B614B7E2E90083B7ED /* LBGIFImage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LBGIFImage-Info.plist"; sourceTree = "<group>"; };
+		2B8951B814B7E2E90083B7ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2B8951BA14B7E2E90083B7ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B8951BC14B7E2E90083B7ED /* LBGIFImage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LBGIFImage-Prefix.pch"; sourceTree = "<group>"; };
+		2B8951BD14B7E2E90083B7ED /* LBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBAppDelegate.h; sourceTree = "<group>"; };
+		2B8951BE14B7E2E90083B7ED /* LBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBAppDelegate.m; sourceTree = "<group>"; };
+		2B8951C014B7E2E90083B7ED /* LBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBViewController.h; sourceTree = "<group>"; };
+		2B8951C114B7E2E90083B7ED /* LBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBViewController.m; sourceTree = "<group>"; };
+		2B8951C414B7E2E90083B7ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LBViewController.xib; sourceTree = "<group>"; };
+		2B8951CB14B7E2FA0083B7ED /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "../UIImage+GIF.h"; sourceTree = "<group>"; };
+		2B8951CC14B7E2FA0083B7ED /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "../UIImage+GIF.m"; sourceTree = "<group>"; };
+		2B8951CE14B7E3410083B7ED /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2B8951D814B7E3B80083B7ED /* image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image.gif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B8951A714B7E2E90083B7ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B8951CF14B7E3410083B7ED /* ImageIO.framework in Frameworks */,
+				2B8951AF14B7E2E90083B7ED /* UIKit.framework in Frameworks */,
+				2B8951B114B7E2E90083B7ED /* Foundation.framework in Frameworks */,
+				2B8951B314B7E2E90083B7ED /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B89519F14B7E2E80083B7ED = {
+			isa = PBXGroup;
+			children = (
+				2B8951B414B7E2E90083B7ED /* LBGIFImage */,
+				2B8951AD14B7E2E90083B7ED /* Frameworks */,
+				2B8951AB14B7E2E90083B7ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B8951AB14B7E2E90083B7ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B8951AA14B7E2E90083B7ED /* LBGIFImage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B8951AD14B7E2E90083B7ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B8951CE14B7E3410083B7ED /* ImageIO.framework */,
+				2B8951AE14B7E2E90083B7ED /* UIKit.framework */,
+				2B8951B014B7E2E90083B7ED /* Foundation.framework */,
+				2B8951B214B7E2E90083B7ED /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B8951B414B7E2E90083B7ED /* LBGIFImage */ = {
+			isa = PBXGroup;
+			children = (
+				2B8951CB14B7E2FA0083B7ED /* UIImage+GIF.h */,
+				2B8951CC14B7E2FA0083B7ED /* UIImage+GIF.m */,
+				2B8951BD14B7E2E90083B7ED /* LBAppDelegate.h */,
+				2B8951BE14B7E2E90083B7ED /* LBAppDelegate.m */,
+				2B8951C014B7E2E90083B7ED /* LBViewController.h */,
+				2B8951C114B7E2E90083B7ED /* LBViewController.m */,
+				2B8951C314B7E2E90083B7ED /* LBViewController.xib */,
+				2B8951B514B7E2E90083B7ED /* Supporting Files */,
+			);
+			path = LBGIFImage;
+			sourceTree = "<group>";
+		};
+		2B8951B514B7E2E90083B7ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B8951D814B7E3B80083B7ED /* image.gif */,
+				2B8951B614B7E2E90083B7ED /* LBGIFImage-Info.plist */,
+				2B8951B714B7E2E90083B7ED /* InfoPlist.strings */,
+				2B8951BA14B7E2E90083B7ED /* main.m */,
+				2B8951BC14B7E2E90083B7ED /* LBGIFImage-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B8951A914B7E2E90083B7ED /* LBGIFImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B8951C814B7E2E90083B7ED /* Build configuration list for PBXNativeTarget "LBGIFImage" */;
+			buildPhases = (
+				2B8951A614B7E2E90083B7ED /* Sources */,
+				2B8951A714B7E2E90083B7ED /* Frameworks */,
+				2B8951A814B7E2E90083B7ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LBGIFImage;
+			productName = LBGIFImage;
+			productReference = 2B8951AA14B7E2E90083B7ED /* LBGIFImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B8951A114B7E2E80083B7ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 2B8951A414B7E2E80083B7ED /* Build configuration list for PBXProject "LBGIFImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2B89519F14B7E2E80083B7ED;
+			productRefGroup = 2B8951AB14B7E2E90083B7ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B8951A914B7E2E90083B7ED /* LBGIFImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B8951A814B7E2E90083B7ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B8951B914B7E2E90083B7ED /* InfoPlist.strings in Resources */,
+				2B8951C514B7E2E90083B7ED /* LBViewController.xib in Resources */,
+				2B8951D914B7E3B80083B7ED /* image.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B8951A614B7E2E90083B7ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B8951BB14B7E2E90083B7ED /* main.m in Sources */,
+				2B8951BF14B7E2E90083B7ED /* LBAppDelegate.m in Sources */,
+				2B8951C214B7E2E90083B7ED /* LBViewController.m in Sources */,
+				2B8951CD14B7E2FA0083B7ED /* UIImage+GIF.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B8951B714B7E2E90083B7ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B8951B814B7E2E90083B7ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2B8951C314B7E2E90083B7ED /* LBViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B8951C414B7E2E90083B7ED /* en */,
+			);
+			name = LBViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B8951C614B7E2E90083B7ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B8951C714B7E2E90083B7ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B8951C914B7E2E90083B7ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LBGIFImage/LBGIFImage-Prefix.pch";
+				INFOPLIST_FILE = "LBGIFImage/LBGIFImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2B8951CA14B7E2E90083B7ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LBGIFImage/LBGIFImage-Prefix.pch";
+				INFOPLIST_FILE = "LBGIFImage/LBGIFImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B8951A414B7E2E80083B7ED /* Build configuration list for PBXProject "LBGIFImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B8951C614B7E2E90083B7ED /* Debug */,
+				2B8951C714B7E2E90083B7ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B8951C814B7E2E90083B7ED /* Build configuration list for PBXNativeTarget "LBGIFImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B8951C914B7E2E90083B7ED /* Debug */,
+				2B8951CA14B7E2E90083B7ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B8951A114B7E2E80083B7ED /* Project object */;
+}
