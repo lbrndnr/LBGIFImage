@@ -51,6 +51,7 @@
     
     NSDictionary* properties = (NSDictionary*)CGImageSourceCopyProperties(source, NULL);
     NSDictionary* gifProperties = [properties objectForKey:(NSString*)kCGImagePropertyGIFDictionary];
+    [properties release];
     
     size_t count = CGImageSourceGetCount(source);
     NSMutableArray* images = [NSMutableArray array];
