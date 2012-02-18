@@ -136,7 +136,7 @@
 		2B8951A114B7E2E80083B7ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 2B8951A414B7E2E80083B7ED /* Build configuration list for PBXProject "LBGIFImage" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -286,6 +286,7 @@
 				2B8951CA14B7E2E90083B7ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

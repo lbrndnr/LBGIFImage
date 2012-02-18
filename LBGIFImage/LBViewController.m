@@ -8,6 +8,7 @@
 
 #import "LBViewController.h"
 #import "UIImage+GIF.h"
+#import "LBAppDelegate.h"
 
 @implementation LBViewController
 

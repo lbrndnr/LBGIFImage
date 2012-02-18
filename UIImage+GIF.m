@@ -11,6 +11,36 @@
 
 @implementation UIImage (GIF)
 
++(UIImage*)_animatedImageWithSource:(CGImageSourceRef)source {
+    if (!source) {
+        return nil;
+    }
+    
+    NSDictionary* properties = (NSDictionary*)CGImageSourceCopyProperties(source, NULL);
+    NSDictionary* gifProperties = [properties objectForKey:(NSString*)kCGImagePropertyGIFDictionary];
+    [properties release];
+    
+    size_t count = CGImageSourceGetCount(source);
+    NSMutableArray* images = [NSMutableArray array];
+    
+    for (size_t i = 0; i < count; i++) {
+        CGImageRef image = CGImageSourceCreateImageAtIndex(source, i, NULL);
+        
+        [images addObject:[UIImage imageWithCGImage:image]];
+        
+        CGImageRelease(image);
+    }
+    
+    NSTimeInterval duration = [[gifProperties objectForKey:(NSString*)kCGImagePropertyGIFDelayTime] doubleValue];
+    if (!duration) {
+        duration = (1.0f/10.0f)*count;
+    }
+    
+    CFRelease(source);
+    
+    return [UIImage animatedImageWithImages:images duration:duration];
+}
+
 +(UIImage*)animatedGIFNamed:(NSString *)name {
     NSUInteger scale = [UIScreen mainScreen].scale;
     
@@ -48,30 +78,7 @@
 
 +(UIImage*)animatedGIFWithData:(NSData *)data {
     CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)data, NULL);
-    
-    NSDictionary* properties = (NSDictionary*)CGImageSourceCopyProperties(source, NULL);
-    NSDictionary* gifProperties = [properties objectForKey:(NSString*)kCGImagePropertyGIFDictionary];
-    [properties release];
-    
-    size_t count = CGImageSourceGetCount(source);
-    NSMutableArray* images = [NSMutableArray array];
-    
-    for (size_t i = 0; i < count; i++) {
-        CGImageRef image = CGImageSourceCreateImageAtIndex(source, i, NULL);
-        
-        [images addObject:[UIImage imageWithCGImage:image]];
-        
-        CGImageRelease(image);
-    }
-    
-    NSTimeInterval duration = [[gifProperties objectForKey:(NSString*)kCGImagePropertyGIFDelayTime] doubleValue];
-    if (!duration) {
-        duration = (1.0f/10.0f)*count;
-    }
-    
-    CFRelease(source);
-    
-    return [UIImage animatedImageWithImages:images duration:duration];
+    return [UIImage _animatedImageWithSource:source];
 }
 
 -(UIImage*)animatedImageByScalingAndCroppingToSize:(CGSize)size {
