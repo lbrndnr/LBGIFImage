@@ -8,7 +8,26 @@
 
 #import "LBViewController.h"
 #import "UIImage+GIF.h"
-#import "LBAppDelegate.h"
+#include <mach/mach_time.h>
+
+static uint64_t startTime;
+
+void startRec(void);
+void startRec() {
+    startTime = mach_absolute_time();
+}
+
+uint64_t stopRec(BOOL log);
+uint64_t stopRec(BOOL log) {
+    uint64_t endTime = mach_absolute_time();
+    
+    uint64_t elapsedTime = endTime - startTime;
+    if (log) {
+        NSLog(@"Recorded Time:%llu", elapsedTime);
+    }
+    return elapsedTime;
+}
+
 
 @implementation LBViewController
 
@@ -24,7 +43,10 @@
 {
     [super viewDidLoad];
 	
-    UIImage* image = [UIImage animatedGIFNamed:@"image"];
+    startRec();
+    NSData* data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"image" ofType:@"gif"]];
+    UIImage* image = [UIImage animatedGIFWithData:data];
+    stopRec(YES);
     
     [(UIImageView*)self.view setImage:image];
 }

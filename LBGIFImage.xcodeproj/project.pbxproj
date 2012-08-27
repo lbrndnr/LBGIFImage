@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B61733515EBD76400FAD0A5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8951CE14B7E3410083B7ED /* ImageIO.framework */; };
 		2B8951AF14B7E2E90083B7ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8951AE14B7E2E90083B7ED /* UIKit.framework */; };
 		2B8951B114B7E2E90083B7ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8951B014B7E2E90083B7ED /* Foundation.framework */; };
 		2B8951B314B7E2E90083B7ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8951B214B7E2E90083B7ED /* CoreGraphics.framework */; };
 		2B8951B914B7E2E90083B7ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B8951B714B7E2E90083B7ED /* InfoPlist.strings */; };
 		2B8951BB14B7E2E90083B7ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8951BA14B7E2E90083B7ED /* main.m */; };
 		2B8951BF14B7E2E90083B7ED /* LBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8951BE14B7E2E90083B7ED /* LBAppDelegate.m */; };
-		2B8951C214B7E2E90083B7ED /* LBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8951C114B7E2E90083B7ED /* LBViewController.m */; };
-		2B8951C514B7E2E90083B7ED /* LBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B8951C314B7E2E90083B7ED /* LBViewController.xib */; };
 		2B8951CD14B7E2FA0083B7ED /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8951CC14B7E2FA0083B7ED /* UIImage+GIF.m */; };
-		2B8951CF14B7E3410083B7ED /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8951CE14B7E3410083B7ED /* ImageIO.framework */; };
 		2B8951D914B7E3B80083B7ED /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B8951D814B7E3B80083B7ED /* image.gif */; };
+		2B94D46315EA56F80048232C /* LBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B94D46215EA56F80048232C /* LBViewController.m */; };
+		2B94D46915EA572F0048232C /* LBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B94D46815EA572F0048232C /* LBViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +32,12 @@
 		2B8951BD14B7E2E90083B7ED /* LBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBAppDelegate.h; sourceTree = "<group>"; };
 		2B8951BE14B7E2E90083B7ED /* LBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBAppDelegate.m; sourceTree = "<group>"; };
 		2B8951C014B7E2E90083B7ED /* LBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBViewController.h; sourceTree = "<group>"; };
-		2B8951C114B7E2E90083B7ED /* LBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBViewController.m; sourceTree = "<group>"; };
-		2B8951C414B7E2E90083B7ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LBViewController.xib; sourceTree = "<group>"; };
 		2B8951CB14B7E2FA0083B7ED /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "../UIImage+GIF.h"; sourceTree = "<group>"; };
 		2B8951CC14B7E2FA0083B7ED /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "../UIImage+GIF.m"; sourceTree = "<group>"; };
 		2B8951CE14B7E3410083B7ED /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		2B8951D814B7E3B80083B7ED /* image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image.gif; sourceTree = "<group>"; };
+		2B94D46215EA56F80048232C /* LBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBViewController.m; sourceTree = "<group>"; };
+		2B94D46815EA572F0048232C /* LBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B8951CF14B7E3410083B7ED /* ImageIO.framework in Frameworks */,
+				2B61733515EBD76400FAD0A5 /* ImageIO.framework in Frameworks */,
 				2B8951AF14B7E2E90083B7ED /* UIKit.framework in Frameworks */,
 				2B8951B114B7E2E90083B7ED /* Foundation.framework in Frameworks */,
 				2B8951B314B7E2E90083B7ED /* CoreGraphics.framework in Frameworks */,
@@ -91,8 +91,7 @@
 				2B8951BD14B7E2E90083B7ED /* LBAppDelegate.h */,
 				2B8951BE14B7E2E90083B7ED /* LBAppDelegate.m */,
 				2B8951C014B7E2E90083B7ED /* LBViewController.h */,
-				2B8951C114B7E2E90083B7ED /* LBViewController.m */,
-				2B8951C314B7E2E90083B7ED /* LBViewController.xib */,
+				2B94D46215EA56F80048232C /* LBViewController.m */,
 				2B8951B514B7E2E90083B7ED /* Supporting Files */,
 			);
 			path = LBGIFImage;
@@ -101,6 +100,7 @@
 		2B8951B514B7E2E90083B7ED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B94D46815EA572F0048232C /* LBViewController.xib */,
 				2B8951D814B7E3B80083B7ED /* image.gif */,
 				2B8951B614B7E2E90083B7ED /* LBGIFImage-Info.plist */,
 				2B8951B714B7E2E90083B7ED /* InfoPlist.strings */,
@@ -161,8 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B8951B914B7E2E90083B7ED /* InfoPlist.strings in Resources */,
-				2B8951C514B7E2E90083B7ED /* LBViewController.xib in Resources */,
 				2B8951D914B7E3B80083B7ED /* image.gif in Resources */,
+				2B94D46915EA572F0048232C /* LBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +175,8 @@
 			files = (
 				2B8951BB14B7E2E90083B7ED /* main.m in Sources */,
 				2B8951BF14B7E2E90083B7ED /* LBAppDelegate.m in Sources */,
-				2B8951C214B7E2E90083B7ED /* LBViewController.m in Sources */,
 				2B8951CD14B7E2FA0083B7ED /* UIImage+GIF.m in Sources */,
+				2B94D46315EA56F80048232C /* LBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +189,6 @@
 				2B8951B814B7E2E90083B7ED /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2B8951C314B7E2E90083B7ED /* LBViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B8951C414B7E2E90083B7ED /* en */,
-			);
-			name = LBViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

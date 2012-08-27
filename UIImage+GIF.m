@@ -7,44 +7,47 @@
 //
 
 #import "UIImage+GIF.h"
-#import "ImageIO/ImageIO.h"
+#import <ImageIO/ImageIO.h>
 
 @implementation UIImage (GIF)
 
-+(UIImage*)_animatedImageWithSource:(CGImageSourceRef)source {
-    if (!source) {
++(UIImage*)animatedGIFWithData:(NSData *)data {
+    if (!data) {
         return nil;
     }
     
-    NSDictionary* properties = (NSDictionary*)CGImageSourceCopyProperties(source, NULL);
-    NSDictionary* gifProperties = [properties objectForKey:(NSString*)kCGImagePropertyGIFDictionary];
-    [properties release];
+    CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)data, NULL);
     
     size_t count = CGImageSourceGetCount(source);
     NSMutableArray* images = [NSMutableArray array];
     
+    NSTimeInterval duration = 0.0f;
+    
     for (size_t i = 0; i < count; i++) {
         CGImageRef image = CGImageSourceCreateImageAtIndex(source, i, NULL);
+        
+        NSDictionary* frameProperties = (NSDictionary*)CGImageSourceCopyPropertiesAtIndex(source, i, NULL);
+        duration += [[[frameProperties objectForKey:(NSString*)kCGImagePropertyGIFDictionary] objectForKey:(NSString*)kCGImagePropertyGIFDelayTime] doubleValue];
+        [frameProperties release];
         
         [images addObject:[UIImage imageWithCGImage:image]];
         
         CGImageRelease(image);
     }
     
-    NSTimeInterval duration = [[gifProperties objectForKey:(NSString*)kCGImagePropertyGIFDelayTime] doubleValue];
+    CFRelease(source);
+    
     if (!duration) {
         duration = (1.0f/10.0f)*count;
     }
-    
-    CFRelease(source);
     
     return [UIImage animatedImageWithImages:images duration:duration];
 }
 
 +(UIImage*)animatedGIFNamed:(NSString *)name {
-    NSUInteger scale = [UIScreen mainScreen].scale;
+    CGFloat scale = [UIScreen mainScreen].scale;
     
-    if (scale > 1) {
+    if (scale > 1.0f) {
         NSString* retinaPath = [[NSBundle mainBundle] pathForResource:[name stringByAppendingString:@"@2x"] ofType:@"gif"];
         
         NSData* data = [NSData dataWithContentsOfFile:retinaPath];
@@ -76,11 +79,6 @@
     }    
 }
 
-+(UIImage*)animatedGIFWithData:(NSData *)data {
-    CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)data, NULL);
-    return [UIImage _animatedImageWithSource:source];
-}
-
 -(UIImage*)animatedImageByScalingAndCroppingToSize:(CGSize)size {
     if (CGSizeEqualToSize(self.size, size) || CGSizeEqualToSize(size, CGSizeZero)) {
         return self;
@@ -91,7 +89,7 @@
     
     CGFloat widthFactor = size.width / self.size.width;
     CGFloat heightFactor = size.height / self.size.height;
-    CGFloat scaleFactor = (widthFactor > heightFactor) ? widthFactor : heightFactor;
+    CGFloat scaleFactor = (widthFactor > heightFactor) ? widthFactor :heightFactor;
     scaledSize.width = self.size.width * scaleFactor;
     scaledSize.height = self.size.height * scaleFactor;
     if (widthFactor > heightFactor) {
