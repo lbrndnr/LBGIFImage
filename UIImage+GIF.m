@@ -30,7 +30,7 @@
         duration += [[[frameProperties objectForKey:(NSString*)kCGImagePropertyGIFDictionary] objectForKey:(NSString*)kCGImagePropertyGIFDelayTime] doubleValue];
         [frameProperties release];
         
-        [images addObject:[UIImage imageWithCGImage:image]];
+        [images addObject:[UIImage imageWithCGImage:image scale:[UIScreen mainScreen].scale orientation:UIImageOrientationUp]];
         
         CGImageRelease(image);
     }
