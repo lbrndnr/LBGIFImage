@@ -44,8 +44,7 @@ uint64_t stopRec(BOOL log) {
     [super viewDidLoad];
 	
     startRec();
-    NSData* data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"image" ofType:@"gif"]];
-    UIImage* image = [UIImage animatedGIFWithData:data];
+    UIImage* image = [UIImage animatedGIFNamed:@"loading"];
     stopRec(YES);
     
     [(UIImageView*)self.view setImage:image];
