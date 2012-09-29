@@ -15,9 +15,9 @@
 		2B3F0C8C1616F28200C62912 /* LBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F0C8B1616F28200C62912 /* LBAppDelegate.m */; };
 		2B3F0C951616F28200C62912 /* LBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F0C941616F28200C62912 /* LBViewController.m */; };
 		2B3F0C981616F28200C62912 /* LBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B3F0C961616F28200C62912 /* LBViewController.xib */; };
-		2B3F0CA01616F2A200C62912 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F0C9F1616F2A200C62912 /* UIImage+GIF.m */; };
 		2B3F0CA21616F2EE00C62912 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3F0CA11616F2EE00C62912 /* ImageIO.framework */; };
 		2B3F0CA61616F58200C62912 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3F0CA51616F58200C62912 /* image.gif */; };
+		2B3F0CB21616F82100C62912 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F0CB11616F82100C62912 /* UIImage+GIF.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +34,10 @@
 		2B3F0C931616F28200C62912 /* LBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBViewController.h; sourceTree = "<group>"; };
 		2B3F0C941616F28200C62912 /* LBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBViewController.m; sourceTree = "<group>"; };
 		2B3F0C971616F28200C62912 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LBViewController.xib; sourceTree = "<group>"; };
-		2B3F0C9E1616F2A200C62912 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "../../../LBGIFImage/UIImage+GIF.h"; sourceTree = "<group>"; };
-		2B3F0C9F1616F2A200C62912 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "../../../LBGIFImage/UIImage+GIF.m"; sourceTree = "<group>"; };
 		2B3F0CA11616F2EE00C62912 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		2B3F0CA51616F58200C62912 /* image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image.gif; sourceTree = "<group>"; };
+		2B3F0CB01616F82100C62912 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		2B3F0CB11616F82100C62912 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 		2B3F0C811616F28200C62912 /* LBGIFImage */ = {
 			isa = PBXGroup;
 			children = (
-				2B3F0C9E1616F2A200C62912 /* UIImage+GIF.h */,
-				2B3F0C9F1616F2A200C62912 /* UIImage+GIF.m */,
+				2B3F0CB01616F82100C62912 /* UIImage+GIF.h */,
+				2B3F0CB11616F82100C62912 /* UIImage+GIF.m */,
 				2B3F0C8A1616F28200C62912 /* LBAppDelegate.h */,
 				2B3F0C8B1616F28200C62912 /* LBAppDelegate.m */,
 				2B3F0C931616F28200C62912 /* LBViewController.h */,
@@ -178,7 +178,7 @@
 				2B3F0C881616F28200C62912 /* main.m in Sources */,
 				2B3F0C8C1616F28200C62912 /* LBAppDelegate.m in Sources */,
 				2B3F0C951616F28200C62912 /* LBViewController.m in Sources */,
-				2B3F0CA01616F2A200C62912 /* UIImage+GIF.m in Sources */,
+				2B3F0CB21616F82100C62912 /* UIImage+GIF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +294,7 @@
 				2B3F0C9D1616F28200C62912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
