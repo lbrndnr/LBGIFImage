@@ -3,7 +3,7 @@
 //  LBGIFImage
 //
 //  Created by Laurin Brandner on 06.01.12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 LaurinBrandner. All rights reserved.
 //
 
 #import "LBViewController.h"
@@ -48,6 +48,7 @@ uint64_t stopRec(BOOL log) {
     UIImage* image = [UIImage animatedGIFWithData:data];
     stopRec(YES);
     
+    self.view.contentMode = UIViewContentModeScaleAspectFit;
     [(UIImageView*)self.view setImage:image];
 }
 
