@@ -44,10 +44,9 @@ uint64_t stopRec(BOOL log) {
     [super viewDidLoad];
 	
     startRec();
-    UIImage* image = [UIImage animatedGIFNamed:@"loading"];
+    UIImage* image = [UIImage animatedGIFNamed:@"image"];
     stopRec(YES);
     
-    self.view.contentMode = UIViewContentModeScaleAspectFit;
     [(UIImageView*)self.view setImage:image];
 }
 
