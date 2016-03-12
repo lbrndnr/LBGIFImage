@@ -3,7 +3,7 @@
 //  LBGIFImage
 //
 //  Created by Laurin Brandner on 06.01.12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Laurin Brandner. All rights reserved.
 //
 
 #import "UIImage+GIF.h"
