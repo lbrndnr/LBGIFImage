@@ -15,4 +15,4 @@ UIImage* image = [UIImage animatedGIFWithData:data];
 ```
 
 ## License
-LBYouTubeView is licensed under the [MIT License](http://opensource.org/licenses/mit-license.php). 
+LBGIFImage is licensed under the [MIT License](http://opensource.org/licenses/mit-license.php). 
